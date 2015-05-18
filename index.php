@@ -30,7 +30,7 @@ function getUserID($userName){
 }
 //function to print out images onto screen
 function printImages($userID){
-		$url = 'https://api.instagram.com/v1/users/'.$userID.'/media/recent?client_id='.clientID.'&count=10';
+		$url = 'https://api.instagram.com/v1/users/'.$userID.'/media/recent?client_id='.clientID.'&count=5';
 		$instagramInfo = connectToInstagram($url);
 		$results = json_decode($instagramInfo, true);
 		//parse through the information one by one.
